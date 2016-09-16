@@ -259,14 +259,14 @@ nav h2:hover {
 .services-card {
     background-color: white;
     margin: 15px auto;
-    border-bottom: 1px solid #5175C0;
+    border-bottom: 2px solid #5175C0;
     border-radius: 5px;
     padding: 0 15px;
 }
 
-.services-card:hover {
+/*.services-card:hover {
     box-shadow: 0px 1px 2px #5175C0;
-}
+}*/
 
 
 /*#services .col-md-3 {
