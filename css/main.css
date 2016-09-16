@@ -1,0 +1,442 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900';
+@import 'https://fonts.googleapis.com/css?family=Lobster';
+
+/*      BASE CSS START      */
+
+body {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.mycontainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+hr {
+    width: 150px;
+    border-color: #5175C0;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 25px;
+    line-height: 40px;
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.animated {
+    opacity : 0;
+    transition: all .8s ease-in;
+}
+
+
+/*img {
+    margin-top: 50px;
+}*/
+
+form {
+    margin-top: 50px;
+}
+
+
+/*      BASE CSS FINISH     */
+
+
+/*      Navigation Menu start       */
+
+.navbar {
+    background-color: #5175C0;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.navbar-default {
+    border: none;
+}
+
+.navbar h2 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    color: white;
+    line-height: 25px;
+}
+
+.navbar-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    background-color: white !important;
+    color: #5175C0;
+}
+
+nav h2:hover {
+    cursor: pointer;
+}
+
+#myNavbar {
+    margin: 0;
+    padding: 0;
+}
+
+#myNavbar li {
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+}
+
+#myNavbar a {
+    transition: 0.3s ease;
+    background: #5175C0;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-top: 4px solid #5175C0;
+    border-bottom: 4px solid #5175C0;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+#myNavbar a:hover {
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    padding: 2px 0;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+#myNavbar a:focus {
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    padding: 2px 0;
+    outline: none;
+}
+
+@media (max-width: 760px) {
+    #myNavbar a {
+        width: 60vw;
+    }
+    #myNavbar a {
+        width: 60vw;
+        display: block;
+    }
+    #myNavbar a:hover {
+        border-top: 4px solid #ffffff;
+        border-bottom: 4px solid #ffffff;
+        padding: 2px 0;
+        margin: 8px 0;
+        cursor: pointer;
+    }
+    #myNavbar a:focus {
+        border-top: 4px solid #ffffff;
+        border-bottom: 4px solid #ffffff;
+        padding: 2px 0;
+        margin: 8px 0;
+    }
+}
+
+
+/*      Navigation Menu end     */
+
+
+/*      Cover Section start     */
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 1;
+    color: white;
+    position: relative;
+}
+
+#cover a {
+    color: white;
+}
+
+.cover-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    -webkit-filter: blur(0.7px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(images/pattern.png);
+    background-repeat: repeat;
+}
+
+#cover #down-arrow {
+    font-size: 60px;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+}
+
+#cover i {
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+}
+
+#cover #down-arrow:hover {
+    cursor: pointer;
+}
+
+
+/*      Cover Section end       */
+
+
+/*      Services Section start      */
+
+#services {
+    background-color: #f5f5f5;
+}
+
+.services-card {
+    background-color: white;
+    margin: 15px auto;
+    border-bottom: 1px solid #5175C0;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.services-card:hover {
+    box-shadow: 0px 1px 2px #5175C0;
+}
+
+
+/*#services .col-md-3 {
+    padding: 10px;
+}*/
+
+#services .row {
+    padding-top: 40px;
+}
+
+#services img {
+    margin-top: 50px;
+}
+
+#services h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3399FF;
+}
+
+#services h5 {
+    font-size: 15px;
+}
+
+
+/*      Services Section end        */
+
+
+/*      Wroks Section Start     */
+
+#works img {
+    padding: 0;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+figure {
+    border-radius: 5px;
+    border: 1px solid #5175C0;
+}
+
+figure:hover {
+    box-shadow: 0px 1px 2px #5175C0;
+    border: 1px solid #5175C0;
+}
+
+#works .col-lg-4 {
+    padding: 10px;
+}
+
+#works .row {
+    padding-top: 40px;
+}
+
+
+/*      Works Section end       */
+
+
+/*      Skills Section start        */
+
+#skills {
+    background-color: #f5f5f5;
+}
+
+#skills img {
+    margin-top: 70px;
+    border-radius: 5px;
+    border: 2px solid #5175C0;
+}
+
+
+/*      Skills Section end        */
+
+
+/*      hire-me Section starts      */
+
+#hire-me {
+    background-color: #5175C0;
+    height: 300px;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+
+#hire-me .btn {
+    width: 20%;
+}
+
+#hire-me .btn:hover {
+    background-color: #5175C0;
+    color: white;
+    border: 1px solid white;
+}
+
+
+/*      hire-me Section ends      */
+
+
+/*      Contact Section starts      */
+
+#contact form {
+    padding-top: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    margin: 10px;
+}
+
+.form-control {
+    border: 1px solid #5175C0;
+}
+
+#contact .btn {
+    width: 100%;
+    margin: 0 10px;
+    ;
+    padding: 10;
+    border: 1px solid #5175C0;
+}
+
+#contact .btn:hover {
+    background-color: #5175C0;
+    color: white;
+}
+
+
+/*      Contact Section ends      */
+
+
+/*      Footer starts      */
+
+footer {
+    background-color: #5175C0;
+    padding: 20px;
+    color: white;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+footer li {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+footer li:hover {
+    background-color: #5175C0;
+}
+
+footer li i {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    color: #5175C0;
+}
+
+footer li i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+footer h4 i {
+    width: 40px;
+}
