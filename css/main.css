@@ -79,9 +79,10 @@ li a {
     transition: opacity .8s ease-in;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     h3 {
-        font-size: 15px;
+        font-size: 20px;
+        width: 90%;
     }
 }
 
