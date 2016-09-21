@@ -45,7 +45,16 @@ $(document).ready(function () {
     
     //Menu display toggle function ends.
     
-});
+    
+    //NavBar collapse on anchor click for mobiles
+    $(".navbar li a").click(function (event) {
+        $(".navbar-collapse").collapse('hide');
+    }); // End
+    
+    
+    
+    
+});// Doc ready ends here.
 
 
 //All page animations using Waypoints.js
