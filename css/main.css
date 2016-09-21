@@ -79,6 +79,12 @@ li a {
     transition: opacity .8s ease-in;
 }
 
+@media (max-width: 500px) {
+    h3 {
+        font-size: 15px;
+    }
+}
+
 
 /*img {
     margin-top: 50px;
