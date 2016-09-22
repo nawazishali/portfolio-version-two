@@ -407,6 +407,12 @@ textarea {
     color: white;
 }
 
+@media (max-width: 650px) {
+    #contact form {
+        width: 90%;
+    }
+}
+
 
 /*      Contact Section ends      */
 
