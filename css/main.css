@@ -77,6 +77,9 @@ li a {
 .animated {
     opacity : 0;
     transition: opacity .8s ease-in;
+    animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -webkit-animation-duration: .5s;
 }
 
 @media (max-width: 650px) {
