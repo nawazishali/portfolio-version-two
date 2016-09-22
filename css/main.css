@@ -150,32 +150,37 @@ nav h2:hover {
 }
 
 #myNavbar a {
-    transition: 0.3s ease;
     background: #5175C0;
     color: #ffffff;
     font-size: 15px;
     text-decoration: none;
     color: white;
     display: block;
-    border-top: 4px solid #5175C0;
-    border-bottom: 4px solid #5175C0;
     padding: 10px 0;
     margin: 0 10px;
 }
 
-#myNavbar a:hover {
-    border-top: 4px solid #ffffff;
-    border-bottom: 4px solid #ffffff;
-    padding: 2px 0;
+#myNavbar a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+#myNavbar a:hover:after {
+    width: 100%;
+	background: white;
     cursor: pointer;
     color: white;
     text-decoration: none;
 }
 
-#myNavbar a:focus {
-    border-top: 4px solid #ffffff;
-    border-bottom: 4px solid #ffffff;
-    padding: 2px 0;
+#myNavbar a:focus:after {
+    width: 100%;
+	background: white;
     outline: none;
 }
 
@@ -188,17 +193,7 @@ nav h2:hover {
         display: block;
     }
     #myNavbar a:hover {
-        border-top: 4px solid #ffffff;
-        border-bottom: 4px solid #ffffff;
-        padding: 2px 0;
-        margin: 8px 0;
         cursor: pointer;
-    }
-    #myNavbar a:focus {
-        border-top: 4px solid #ffffff;
-        border-bottom: 4px solid #ffffff;
-        padding: 2px 0;
-        margin: 8px 0;
     }
 }
 
