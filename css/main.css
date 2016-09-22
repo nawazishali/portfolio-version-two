@@ -105,8 +105,8 @@ form {
 /*      Navigation Menu start       */
 
 .navbar {
-    /*background-color: #5175C0;*/
-    background-color: rgba(81, 117, 192, 0.8);
+    background-color: #5175C0;
+    /*background-color: rgba(81, 117, 192, 0.8);*/
     padding: 0;
     margin: 0;
     color: white;
