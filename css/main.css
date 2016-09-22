@@ -164,9 +164,10 @@ nav h2:hover {
 	content: '';
 	display: block;
 	margin: auto;
-	height: 3px;
+	height: 2px;
 	width: 0px;
 	background: transparent;
+	border-radius: 6px;
 	transition: width .3s ease, background-color .3s ease;
 }
 
