@@ -362,6 +362,7 @@ figure:hover {
 
 #hire-me .btn {
     width: 20%;
+    min-width: 100px;
 }
 
 #hire-me .btn:hover {
@@ -384,7 +385,7 @@ figure:hover {
 
 input,
 textarea {
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .form-control {
@@ -393,8 +394,7 @@ textarea {
 
 #contact .btn {
     width: 100%;
-    margin: 0 10px;
-    ;
+    margin: 10px 0;
     padding: 10;
     border: 1px solid #5175C0;
 }
