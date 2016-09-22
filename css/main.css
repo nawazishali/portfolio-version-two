@@ -167,12 +167,12 @@ nav h2:hover {
 	height: 3px;
 	width: 0px;
 	background: transparent;
-	transition: width .5s ease, background-color .5s ease;
+	transition: width .3s ease, background-color .3s ease;
 }
 
 #myNavbar a:hover:after {
     width: 100%;
-	background: white;
+    background: white;
     cursor: pointer;
     color: white;
     text-decoration: none;
@@ -180,7 +180,7 @@ nav h2:hover {
 
 #myNavbar a:focus:after {
     width: 100%;
-	background: white;
+    background: white;
     outline: none;
 }
 
