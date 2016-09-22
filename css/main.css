@@ -185,6 +185,10 @@ nav h2:hover {
     outline: none;
 }
 
+#myNavbar a:focus {
+    outline: none;
+}
+
 @media (max-width: 760px) {
     #myNavbar a {
         width: 60vw;
