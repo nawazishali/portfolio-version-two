@@ -28,11 +28,11 @@ $(document).ready(function () {
     
     
     // hide .navbar first
-    $(".navbar").hide();
+   /* $(".navbar").hide();
     // fade in .navbar
     $(function () {
         $(window).scroll(function () {
-            // set distance user needs o scroll before we fadeIn navbar
+            // set distance user needs to scroll before we fadeIn navbar
             if ($(this).scrollTop() > coverHeight - 1) {
                 $('.navbar').fadeIn('medium');
             }
@@ -40,7 +40,7 @@ $(document).ready(function () {
                 $('.navbar').fadeOut('medium');
             }
         });
-    });
+    });*/
     
     
     //Menu display toggle function ends.
