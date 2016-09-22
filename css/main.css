@@ -110,6 +110,9 @@ form {
     padding: 0;
     margin: 0;
     color: white;
+    animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
 }
 
 .navbar-default {
