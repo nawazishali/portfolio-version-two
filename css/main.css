@@ -462,3 +462,22 @@ footer li i:hover {
 footer h4 i {
     width: 40px;
 }
+
+
+
+
+/*      Form Submit page styling        */
+
+.form-submitted {
+    background-color: #5175C0;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.form-submitted .animated{
+    opacity: 1;
+}
