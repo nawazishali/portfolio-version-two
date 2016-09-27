@@ -55,7 +55,7 @@ $(document).ready(function () {
     //NavBar collapse on anchor click for mobiles
     $(".navbar li a").click(function (event) {
         $(".navbar-collapse").collapse('hide');
-        $(".navbar-one").toggleClass("color-toggle");
+        $(".navbar-one").removeClass("color-toggle");
     }); // End
     
     
