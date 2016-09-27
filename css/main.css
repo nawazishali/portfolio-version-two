@@ -601,3 +601,14 @@ footer h4 i {
 .form-submitted .animated{
     opacity: 1;
 }
+
+.form-submitted .btn {
+    width: 20%;
+    min-width: 100px;
+}
+
+.form-submitted .btn:hover {
+    background-color: #5175C0;
+    color: white;
+    border: 1px solid white;
+}
