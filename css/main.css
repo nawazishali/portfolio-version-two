@@ -117,8 +117,11 @@ form {
     margin: 0;
     color: white;
     animation-delay: 0.5s;
+    animation-duration: 1.5s;
     -moz-animation-delay: 0.5s;
+    -moz-animation-duration: 1.5s;
     -webkit-animation-delay: 0.5s;
+    -webkit-animation-duration: 1.5s;
 }
 
 .color-toggle {
@@ -379,6 +382,15 @@ nav h2:hover {
 
 #cover #down-arrow:hover {
     cursor: pointer;
+}
+
+#cover .zoomIn {
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    -moz-animation-delay: 0.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-duration: 1.5s;
 }
 
 
