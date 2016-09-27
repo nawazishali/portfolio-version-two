@@ -28,23 +28,29 @@ $(document).ready(function () {
     
     
     // hide .navbar first
-   /* $(".navbar").hide();
+    $(".navbar-two").hide();
     // fade in .navbar
     $(function () {
         $(window).scroll(function () {
-            // set distance user needs to scroll before we fadeIn navbar
+            // set distance user needs o scroll before we fadeIn navbar
             if ($(this).scrollTop() > coverHeight - 1) {
-                $('.navbar').fadeIn('medium');
+                $('.navbar-two').fadeIn('fast').css("position", "fixed");
+                //$(".navbar").css("background-color", "rgba(81, 117, 192, 1)");
             }
             else {
-                $('.navbar').fadeOut('medium');
+                $('.navbar-two').fadeOut('fast');
+                //$(".navbar").css("background-color", "rgba(81, 117, 192, 0)");
             }
         });
-    });*/
+    });
     
     
     //Menu display toggle function ends.
     
+    //Navbar One color adjustment on toggle.
+    $(".navbar-one .navbar-toggle").click(function(){
+        $(".navbar-one").toggleClass("color-toggle");
+    });
     
     //NavBar collapse on anchor click for mobiles
     $(".navbar li a").click(function (event) {
@@ -52,9 +58,7 @@ $(document).ready(function () {
     }); // End
     
     
-    
-    
-});// Doc ready ends here.
+});
 
 
 //All page animations using Waypoints.js
@@ -110,12 +114,3 @@ section.waypoint(function(){
 //Navbar scrollspy ends.
 
 
-
-
-
-
-
-
-
-
-    
