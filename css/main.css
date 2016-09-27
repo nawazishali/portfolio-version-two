@@ -65,6 +65,7 @@ p {
 ul {
     list-style-type: none;
     margin: 5px 0;
+    overflow: hidden;
 }
 
 li {
@@ -105,15 +106,23 @@ form {
 
 /*      Navigation Menu start       */
 
-.navbar {
-    background-color: #5175C0;
+.navbar-one {
+    background-color: rgba(255, 255, 255, 0.0);
     /*background-color: rgba(81, 117, 192, 0.8);*/
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 0;
     padding: 0;
     margin: 0;
     color: white;
     animation-delay: 0.5s;
     -moz-animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
+}
+
+.color-toggle {
+    background-color: #5175C0;
 }
 
 .navbar-default {
@@ -136,26 +145,26 @@ form {
 
 .navbar-toggle:hover,
 .navbar-toggle:focus {
-    background-color: white !important;
-    color: #5175C0;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    color: inherit;
 }
 
 nav h2:hover {
     cursor: pointer;
 }
 
-#myNavbar {
+#myNavbar1 {
     margin: 0;
     padding: 0;
 }
 
-#myNavbar li {
+#myNavbar1 li {
     padding: 0 10px 0 10px;
     margin: 0 10px 0 10px;
 }
 
-#myNavbar a {
-    background: #5175C0;
+#myNavbar1 a {
+    background: inherit;
     color: #ffffff;
     font-size: 15px;
     text-decoration: none;
@@ -165,7 +174,7 @@ nav h2:hover {
     margin: 0 10px;
 }
 
-#myNavbar a:after {
+#myNavbar1 a:after {
 	content: '';
 	display: block;
 	margin: auto;
@@ -176,7 +185,7 @@ nav h2:hover {
 	transition: width .3s ease, background-color .3s ease;
 }
 
-#myNavbar a:hover:after {
+#myNavbar1 a:hover:after {
     width: 100%;
     background: white;
     cursor: pointer;
@@ -184,34 +193,145 @@ nav h2:hover {
     text-decoration: none;
 }
 
-#myNavbar a:focus:after {
+#myNavbar1 a:focus:after {
     width: 100%;
     background: white;
     outline: none;
 }
 
-#myNavbar a:focus {
+#myNavbar1 a:focus {
     outline: none;
 }
 
 @media (max-width: 760px) {
-    #myNavbar a {
+    #myNavbar1 a {
         width: 60vw;
     }
-    #myNavbar a {
+    #myNavbar1 a {
         width: 60vw;
         display: block;
     }
-    #myNavbar a:hover {
+    #myNavbar1 a:hover {
         cursor: pointer;
     }
 }
 
 
-/*      Navigation Menu end     */
+/*      Navigation Menu One end     */
+
+
+/*      Navigation Menu Two start     */
+
+
+.navbar-two {
+    background-color: rgba(81, 117, 192, 1);
+    /*background-color: rgba(81, 117, 192, 0.8);*/
+    border-radius: 0px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    color: white;
+    animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+}
+
+.navbar-two .navbar-default {
+    border: none;
+}
+
+.navbar-two .navbar h2 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    color: white;
+    line-height: 25px;
+}
+
+.navbar-two .navbar-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+}
+
+.navbar-two .navbar-toggle:hover,
+.navbar-two .navbar-toggle:focus {
+    background-color: white !important;
+    color: #5175C0;
+}
+
+#myNavbar2 {
+    margin: 0;
+    padding: 0;
+}
+
+#myNavbar2 li {
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+}
+
+#myNavbar2 a {
+    background: inherit;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+#myNavbar2 a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	border-radius: 6px;
+	transition: width .3s ease, background-color .3s ease;
+}
+
+#myNavbar2 a:hover:after {
+    width: 100%;
+    background: white;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+#myNavbar2 a:focus:after {
+    width: 100%;
+    background: white;
+    outline: none;
+}
+
+#myNavbar2 a:focus {
+    outline: none;
+}
+
+@media (max-width: 760px) {
+    #myNavbar2 a {
+        width: 60vw;
+    }
+    #myNavbar2 a {
+        width: 60vw;
+        display: block;
+    }
+    #myNavbar2 a:hover {
+        cursor: pointer;
+    }
+}
+
+
+/*      Navigation Menu Two end     */
 
 
 /*      Cover Section start     */
+
 
 #cover {
     width: 100vw;
