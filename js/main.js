@@ -10,7 +10,7 @@ $(document).ready(function () {
                 if (target.length) {
                     $('html, body').animate({
                         scrollTop: target.offset().top
-                    }, 1000,'easeOutCirc');
+                    }, 1000,'easeInOutCirc');
                     return false;
                 }
             }
