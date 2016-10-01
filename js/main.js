@@ -69,7 +69,7 @@ var animated = $('.animated');
 animated.waypoint(function(){
  $(this.element).addClass($(this.element).data("animate")).css('opacity', '1');
 },
-{ offset: '85%' });
+{ offset: '95%' });
 
 //Page animations end
 
