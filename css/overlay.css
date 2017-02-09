@@ -205,8 +205,6 @@ figure.effect-julia {
 }
 
 figure.effect-julia img {
-	max-width: none;
-	height: 400px;
 	-webkit-transition: opacity 1s, -webkit-transform 1s;
 	transition: opacity 1s, transform 1s;
 	-webkit-backface-visibility: hidden;
@@ -299,4 +297,15 @@ figure.effect-julia:hover a{
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+
+
+
+@media (max-width: 350px) {
+    figure.effect-julia:hover h2 {
+        font-size: 20px;
+    }
+    figure.effect-julia:hover p {
+        font-size: 10px;
+    }
 }
