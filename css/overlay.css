@@ -303,7 +303,7 @@ figure.effect-julia:hover a{
 
 @media (max-width: 400px) {
     figure.effect-julia:hover h2 {
-        font-size: 15px;
+        font-size: 20px;
     }
     figure.effect-julia:hover p {
         font-size: 10px;
