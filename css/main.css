@@ -454,12 +454,14 @@ nav h2:hover {
 
 figure {
     border-radius: 5px;
-    border: 1px solid #5175C0;
+    border: 1px solid #ffffff;
 }
 
 figure:hover {
-    box-shadow: 0px 1px 2px #5175C0;
+    /*box-shadow: 0px 1px 2px #5175C0;*/
     border: 1px solid #5175C0;
+    transition: border .2s ease-in;
+    animation-duration: .2s; 
 }
 
 #works .col-lg-4 {
