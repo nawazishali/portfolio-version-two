@@ -584,6 +584,8 @@ footer li:hover {
 }
 
 footer li i {
+    width: 42px;
+    height: 42px;
     padding: 5px 0;
     color: #5175C0;
 }
